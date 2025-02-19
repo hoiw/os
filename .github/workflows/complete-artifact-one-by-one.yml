@@ -311,6 +311,7 @@ on:
         - xiaomi-elish
         - youyeetoo-r1-v3
         - zeropi
+        - oec-box-wxy4
 jobs:
 
   build:
@@ -318,7 +319,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: armbian/build@v24.8.1
+      - uses: hoiw/armbian-build@main
         with:
           armbian_token:              "${{secrets.GITHUB_TOKEN}}"
           armbian_target:             "${{inputs.armbian_target}}"
